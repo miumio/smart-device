@@ -1,0 +1,42 @@
+.header {
+  padding: 33px 0;
+  background-color: $dark;
+  color: $white;
+
+  @media (max-width: $tablet) {
+    padding: 20px 0;
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-left: -3px;
+  flex-shrink: 0;
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+  }
+}
+
+.header__contacts {
+  margin: 0 33px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: flex-end;
+
+  @media (max-width: $tablet) {
+    margin-right: 4px;
+    margin-bottom: 3px;
+  }
+}
+
+.header__btn {
+  flex-shrink: 0;
+  @media (max-width: $tablet) {
+    @include visually-hidden;
+  }
+}

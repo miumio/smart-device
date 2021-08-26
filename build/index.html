@@ -9,12 +9,48 @@
 </head>
 <body>
   <header class="header">
-    <nav class="header__nav">
-      <a href="#" class="header__logo">
-        <img src="img/logo-desktop.svg" alt="Logo" width="202" height="52">
-      </a>
-    </nav>
-  </header>
-  <h1>Добро пожаловать в Лигу А.</h1>
+    <div class="header__wrapper wrapper">
+      <div class="header__inner">
+        <a class="header__logo">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+            <img src="img/logo-desktop.svg" alt="Logo" width="202" height="52">
+          </picture>
+        </a>
+        <ul class="header__contacts contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@sd.ru" class="contacts__link">
+              <svg width="19" height="14">
+                <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+              </svg>
+              <span>info@sd.ru</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+74950005252" class="contacts__link">
+              <svg width="17" height="17">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              <span>+7 (495) 000 52 52</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="header__btn btn">Заказать звонок</a>
+      </div>
+      <section class="header__intro intro">
+        <div class="intro__inner">
+          <h1>Печатные платы</h1>
+          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="#" class="intro__btn btn">Получить бесплатную консультацию</a>
+          <a href="#" class="intro__scroll">Скролл вниз</a>
+        </div>
+        <picture>
+          <!-- 1х: 705px; 2x: 1410px -->
+          <source type="image/webp" srcset="img/intro-desktop@1x.webp 1x, img/intro-desktop@2x.webp 2x">
+          <img src="img/intro-desktop@1x.jpg" srcset="img/intro-desktop@2x.jpg 2x" width="705" height="515" alt="Платы">
+        </picture>
+      </section>
+    </div></header>
+    
 </body>
 </html>

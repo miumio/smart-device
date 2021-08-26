@@ -1,2 +1,8 @@
-@import "global/fonts";
-@import "global/global";
+@import "_fonts";
+@import "_global";
+@import "_vars";
+@import "_mixin";
+@import "blocks/_wrapper";
+@import "blocks/_btn";
+@import "blocks/_contacts";
+@import "blocks/_header";
