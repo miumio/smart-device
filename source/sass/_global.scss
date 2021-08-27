@@ -20,6 +20,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   align-content: start;
-  font-family: "PT Mono", "Verdana", sans-serif;
+  font-family: $pt-mono;
   font-weight: normal;
 }

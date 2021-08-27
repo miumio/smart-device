@@ -2,6 +2,8 @@
 
 $dark: #1b2d37;
 $grey: #666666;
+$grey-light: #fafafa;
+$grey-social: #999999;
 $blue: #00b2ff;
 $white: #ffffff;
 
@@ -10,6 +12,17 @@ $white: #ffffff;
 $tablet: 1023px;
 $mobile: 767px;
 
-//res
+//Animation
+
+$easy: 0.2s ease-out;
+
+//Res
 
 $retina: 1.5dppx;
+
+//Font
+$pt-mono: "PT Mono", "Verdana", sans-serif;
+$roboto: "Roboto Condensed", "Arial", sans-serif;
+
+//Decor
+$grey-line: 1px solid rgba(#626962, 0.2);

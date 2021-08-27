@@ -36,7 +36,16 @@
 
 .header__btn {
   flex-shrink: 0;
+  transition: background-color $easy;
+
   @media (max-width: $tablet) {
     @include visually-hidden;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $blue;
+    border-color: $dark;
   }
 }
