@@ -99,19 +99,17 @@
   color: inherit;
   text-decoration: none;
   opacity: 0.5;
-  transition: opacity $easy;
 
   &:hover,
   &:active,
   &:focus {
-    opacity: 1;
+    text-decoration: underline;
   }
 }
 
-.footer__acc-link {
+.footer__accordion-link {
   @media (max-width: $mobile) {
+    position: relative;
     cursor: pointer;
   }
-  // &--active {
-  // }
 }
