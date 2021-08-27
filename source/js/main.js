@@ -1,6 +1,7 @@
 (function () {
+
   const footer = document.querySelector('.footer');
-  const menuLink = footer.querySelectorAll('footer__accordion-link');
+  const menuLink = footer.querySelectorAll('.footer__accordion-link');
   const menuList = footer.querySelectorAll('.footer__list');
 
   menuList.forEach(function (item) {
@@ -8,15 +9,16 @@
   })
 
   menuLink.forEach(function (item) {
-    item.classList.add('footer__acc-link--active');
+    item.classList.add('footer__accordion-link--active');
   })
 
-  menuLink.forEach(function (item) {
+  menuLink.forEach(function (el) {
 
-    item.addEventListener('click', function () {
+    el.addEventListener('click', function () {
 
-      item.classList.toggle('footer__acc-link--active');
-      item.nextElementSibling.classList.toggle('footer__list--hidden');
-    });
+      el.classList.toggle('footer__accordion-link--active');
+      el.nextElementSibling.classList.toggle('footer__list--hidden');
+    })
   });
 })();
+
