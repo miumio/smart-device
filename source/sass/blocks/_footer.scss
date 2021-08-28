@@ -56,7 +56,6 @@
   @media (max-width: $tablet) {
     display: flex;
     flex-direction: column;
-    flex: 1 0 295px;
   }
 
   @media (max-width: $mobile) {
@@ -74,6 +73,7 @@
 
 .footer__social {
   @media (max-width: $tablet) {
+    width: 100%;
     margin: 0 calc(((100vw - 100%) / 2) * -1);
     border-bottom: $grey-line;
   }

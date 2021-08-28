@@ -10,10 +10,14 @@
 }
 
 .contacts__item:not(:first-child) {
-  margin-left: 56px;
+  margin-left: 5.6%;
 
   @media (max-width: $tablet) {
     margin-left: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 29px;
   }
 }
 

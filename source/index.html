@@ -28,7 +28,7 @@
           </li>
           <li class="contacts__item">
             <a href="tel:+74950005252" class="contacts__link">
-              <svg width="17" height="17">
+              <svg width="18" height="18">
                 <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
               </svg>
               <span>+7 (495) 000 52 52</span>
@@ -38,7 +38,7 @@
         <a href="#" class="header__btn btn">Заказать звонок</a>
       </div>
       <section class="header__intro intro">
-        <div class="intro__inner">
+        <div class="intro__text-wrapper">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <a href="#" class="intro__btn btn">
@@ -48,11 +48,16 @@
           </a>
           <a href="#" class="intro__scroll">Скролл вниз</a>
         </div>
-        <picture>
-           <!-- 1х: 705px; 2x: 1410px -->
-          <!-- <source type="image/webp" srcset="img/intro-desktop@1x.webp 1x, img/intro-desktop@2x.webp 2x"> -->
-          <img src="img/intro-desktop@1x.png" srcset="img/intro-desktop@2x.png 2x" width="705" height="515" alt="Платы">
-        </picture>
+        <div class="intro__img-wrapper">
+          <picture>
+            <!-- 1х: 500px; 2x: 1000px -->
+            <source media="(max-width: 767px)" type="image/webp" srcset="img/intro-mobile@1x.webp 1x, img/intro-mobile@2x.webp 2x">
+            <source media="(max-width: 767px)" src="img/intro-mobile@1x.png" srcset="img/intro-mobile@2x.png 2x">
+             <!-- 1х: 705px; 2x: 1410px -->
+           <source type="image/webp" srcset="img/intro-desktop@1x.webp 1x, img/intro-desktop@2x.webp 2x">
+           <img src="img/intro-desktop@1x.png" srcset="img/intro-desktop@2x.png 2x" width="705" height="515" alt="Платы">
+         </picture>
+        </div>
       </section>
     </div>
   </header>

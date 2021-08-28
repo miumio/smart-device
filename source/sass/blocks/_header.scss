@@ -1,16 +1,45 @@
 .header {
-  padding: 33px 0;
-  background-color: $dark;
+  padding: 33px 0 100px;
+  min-height: 877px;
   color: $white;
+  background: url("../img/intro-bg@1x.png") no-repeat center;
+  background-size: cover;
+  background-color: $dark;
+  overflow-x: hidden;
 
   @media (max-width: $tablet) {
     padding: 20px 0;
+    min-height: 686px;
+    background-position: top;
   }
+
+  @media (max-width: $mobile) {
+    padding-top: 16px;
+    padding-bottom: 69px;
+    min-height: auto;
+  }
+}
+
+.header__wrapper {
+  position: relative;
 }
 
 .header__inner {
   display: flex;
   align-items: center;
+  margin-bottom: 173px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 41px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 38px;
+  }
+}
+
+.header__intro {
+  display: flex;
 }
 
 .header__logo {
@@ -20,13 +49,17 @@
   @media (max-width: $tablet) {
     margin-left: 0;
   }
+
+  @media (max-width: $mobile) {
+    margin-left: 2px;
+  }
 }
 
 .header__contacts {
-  margin: 0 33px;
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: flex-end;
+  margin-right: 33px;
 
   @media (max-width: $tablet) {
     margin-right: 4px;
