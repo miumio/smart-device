@@ -1,0 +1,39 @@
+.advantages {
+  margin-bottom: 159px;
+}
+
+.advantages__wrapper {
+  @media (max-width: $mobile) {
+    max-width: 510px;
+  }
+}
+
+.advantages h2 {
+  @include visually-hidden;
+}
+
+.advantages__list {
+  @include list-style-reset;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+  gap: 30px;
+
+  @media (max-width: $mobile) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.advantages__item {
+  align-self: stretch;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__card {
+  height: 100%;
+}

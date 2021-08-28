@@ -1,0 +1,74 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 42px 20px;
+  min-height: 299px;
+  border: 1px solid $grey-advantage;
+  border-left: 3px solid $blue;
+  background-color: $white;
+  transition: background-color $easy;
+
+  @media (max-width: $tablet) {
+    padding: 24px 20px 19px 24px;
+    min-height: 232px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 13px;
+    padding-bottom: 24px;
+  }
+
+  &:hover {
+    background-color: $blue;
+    cursor: pointer;
+  }
+
+  & svg {
+    margin-bottom: 21px;
+    fill: $blue;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 7px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.advantage:hover svg {
+  fill: $white;
+}
+
+.advantage:hover > h3,
+.advantage:hover > p {
+  color: $white;
+}
+
+.advantage h3 {
+  margin: 0 0 17px;
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.13rem;
+  color: $blue;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+  }
+}
+
+.advantage p {
+  margin: 0;
+  line-height: 1.37rem;
+
+  @media (max-width: $tablet) {
+    line-height: 142%;
+  }
+}

@@ -44,7 +44,6 @@
           <a href="#" class="intro__btn btn">
             <span class="intro__link">Получить бесплатную консультацию</span>
             <span class="intro__link intro__link--mobile">Бесплатная консультация</span>
-
           </a>
           <a href="#" class="intro__scroll">Скролл вниз</a>
         </div>
@@ -52,18 +51,70 @@
           <picture>
             <!-- 1х: 500px; 2x: 1000px -->
             <source media="(max-width: 767px)" type="image/webp" srcset="img/intro-mobile@1x.webp 1x, img/intro-mobile@2x.webp 2x">
-            <source media="(max-width: 767px)" src="img/intro-mobile@1x.png" srcset="img/intro-mobile@2x.png 2x">
-             <!-- 1х: 705px; 2x: 1410px -->
-           <source type="image/webp" srcset="img/intro-desktop@1x.webp 1x, img/intro-desktop@2x.webp 2x">
-           <img src="img/intro-desktop@1x.png" srcset="img/intro-desktop@2x.png 2x" width="705" height="515" alt="Платы">
-         </picture>
+            <source media="(max-width: 767px)" srcset="img/intro-mobile@1x.png 1x, img/intro-mobile@2x.png 2x">
+            <!-- 1х: 705px; 2x: 1410px -->
+            <source type="image/webp" srcset="img/intro-desktop@1x.webp 1x, img/intro-desktop@2x.webp 2x">
+            <img src="img/intro-desktop@1x.png" srcset="img/intro-desktop@2x.png 2x" width="705" height="515" alt="Платы">
+          </picture>
         </div>
       </section>
     </div>
   </header>
-  <main></main>
+  <main>
+    <section class="advantages">
+      <h2>Наши преимущества</h2>
+      <div class="advantages__wrapper wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <article class="advantages__card advantage">
+              <svg width="29" height="35">
+                <use xlink:href="img/sprite_auto.svg#icon-watch"></use>
+              </svg>
+              <h3>Оперативные сроки</h3>
+              <p>
+                Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
+              </p>
+            </article>
+          </li>
+          <li class="advantages__item">
+            <article class="advantages__card advantage">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite_auto.svg#icon-suppliers"></use>
+              </svg>
+              <h3>Крупные поставщики</h3>
+              <p>
+                Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+              </p>
+            </article>
+          </li>
+          <li class="advantages__item">
+            <article class="advantages__card advantage">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
+              </svg>
+              <h3>Полная конфиденциальность</h3>
+              <p>
+                По желанию клиента мы обеспечиваем полную конфеденциальность.
+              </p>
+            </article>
+          </li>
+          <li class="advantages__item">
+            <article class="advantages__card advantage">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
+              </svg>
+              <h3>Персонализация стоимости</h3>
+              <p>
+                Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
-    <section class="footer__row">
+    <div class="footer__row">
       <div class="footer__wrapper wrapper">
         <section class="footer__social social">
           <h3>Социальные сети</h3>
@@ -152,8 +203,8 @@
           </ul>
         </section>
       </div>
-    </section>
-    <section class="footer__row copyright">
+    </div>
+    <div class="footer__row copyright">
       <div class="copyright__wrapper wrapper">
         <h3>Copyright</h3>
         <div class="copyright__inner">
@@ -169,7 +220,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
   </footer>
   <script src="js/main.js"></script>
 </body>
