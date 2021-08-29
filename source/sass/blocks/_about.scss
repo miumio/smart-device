@@ -3,11 +3,8 @@
 }
 
 .about h2 {
+  @include title;
   margin: 0 0 22px;
-  font-family: $roboto;
-  font-weight: normal;
-  font-size: 2.25rem;
-  line-height: 3.19rem;
 }
 
 .about__wrapper {
