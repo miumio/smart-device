@@ -61,6 +61,7 @@
         </div>
       </section>
     </div>
+    <section class="header__modal feedback"></section>
   </header>
   <main>
     <section class="advantages">
@@ -208,27 +209,27 @@
     <section class="feedback">
       <h2>Форма обртаной связи</h2>
       <div class="feedback__wrapper wrapper">
-        <div class="feedback__form-wrapper">
+        <div class="feedback__form form">
           <h3>Остались вопросы? Задайте их нам!</h3>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="feedback__field">
+            <div class="form__field">
               <label aria-label="Введите имя">
                 <input type="text" id="data-name" name="name" placeholder="Имя" required="">
               </label>
             </div>
-            <div class="feedback__field">
+            <div class="form__field">
               <label aria-label="Введите номер телефона">
                 <input type="tel" id="data-phone" name="phone" placeholder="Телефон" required="">
               </label>
             </div>
-            <div class="feedback__field feedback__field--textarea">
+            <div class="form__field form__field--textarea">
               <label aria-label="Текст">
                 <textarea name="text" id="data-text" cols="30" rows="10" placeholder="Ваш вопрос" required=""></textarea>
               </label>
             </div>
-            <button class="feedback__btn btn" type="submit">Задать вопрос</button>
-            <div class="feedback__field feedback__field--checkbox">
+            <button class="form__btn btn" type="submit">Задать вопрос</button>
+            <div class="form__field form__field--checkbox">
               <label>
                 <input type="checkbox" name="agreement" checked="">
                 <span></span>
