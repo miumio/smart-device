@@ -24,20 +24,20 @@
 
 (function () {
 
-  const popupLink = document.querySelector(".js-popup");
-  const modalPopup = document.querySelector(".modal");
-  const modalClose = document.querySelectorAll(".js-close");
+  const popupLink = document.querySelector('.js-popup');
+  const modalPopup = document.querySelector('.modal');
+  const modalClose = document.querySelectorAll('.js-close');
 
   popupLink.addEventListener('click', function (evt) {
     evt.preventDefault();
     modalPopup.classList.add('modal--show')
   })
 
-  window.addEventListener("keydown", function (evt) {
+  window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
-      if (modalPopup.classList.contains("modal--show")) {
+      if (modalPopup.classList.contains('modal--show')) {
         evt.preventDefault();
-        modalPopup.classList.remove("modal--show");
+        modalPopup.classList.remove('modal--show');
       }
     }
   });
@@ -49,4 +49,27 @@
       modalPopup.classList.remove('modal--show');
     })
   })
+})();
+
+(function () {
+
+  const links = document.querySelectorAll('.js-scroll');
+
+  links.forEach((item) => {
+    item.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      const hash = this.href.replace(/[^#]*(.*)/, '$1');
+      const href = item.getAttribute('href').substr(1);
+      const el = document.querySelector(hash);
+
+      if (!el) return;
+
+      document.getElementById(href).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  });
+
 })();
