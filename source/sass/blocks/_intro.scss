@@ -119,9 +119,15 @@
   font-size: 1rem;
   background-color: $blue;
   border: none;
+  transition: background-color $easy;
 
   @media (max-width: $tablet) {
     padding: 20px 31px;
+  }
+
+  &:hover {
+    background-color: $dark;
+    box-shadow: 0 0 0 1px $white;
   }
 }
 
@@ -156,5 +162,9 @@
 
   @media (max-width: $mobile) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
   }
 }

@@ -1,0 +1,138 @@
+.feedback {
+  padding: 96px 0 113px;
+  color: $white;
+  background-color: $blue;
+
+  background-image:
+    url("../img/feedback-airplane@1x.png"),
+    url("../img/feedback-bg@1x.png");
+  background-repeat: no-repeat;
+  background-size: 40% auto, 100% auto;
+  background-position: center left 10%;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/feedback-airplane@2x.png");
+  }
+
+  @media (max-width: $tablet) {
+    background-image: none;
+  }
+}
+
+.feedback__wrapper {
+  display: flex;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.feedback h2 {
+  @include visually-hidden;
+}
+
+.feedback h3 {
+  @include title;
+
+  margin-bottom: 7px;
+}
+
+.feedback p {
+  margin: 0;
+}
+
+.feedback__form-wrapper {
+  margin-left: auto;
+  max-width: 50%;
+
+  @media (max-width: $tablet) {
+    max-width: none;
+  }
+}
+
+
+.feedback form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: -15px;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+
+}
+
+.feedback__field {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  flex: 1 1 auto;
+
+  &--textarea {
+    min-width: 450px;
+    resize: none;
+  }
+
+  &--checkbox {
+    flex-basis: 230px;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+  }
+
+  @media (max-width: $tablet) {
+    &--textarea {
+      flex: 0 1 960px;
+      min-width: auto;
+    }
+  }
+}
+
+.feedback textarea,
+.feedback input {
+  padding: 20px;
+  width: 100%;
+  font-size: 1rem;
+  color: rgba($white, 0.7);
+  background-color: rgba($white, 0.1);
+  border: 0;
+
+  &::placeholder {
+    font-family: $pt-mono;
+    font-size: 1rem;
+    color: $white;
+  }
+  &:focus,
+  &:hover {
+    outline: 1px solid $white;
+    box-shadow: 0 0 0 1px $white;
+  }
+}
+
+.feedback__btn {
+  margin-left: 15px;
+  flex: 0 1 auto;
+}
+
+.feedback__field--checkbox input {
+  @include visually-hidden;
+
+  &:checked + span {
+    background-image: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 2L3.5 5L8 0.5' stroke='white'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:focus + span {
+    outline: 2px solid orange;
+  }
+}
+
+.feedback__field--checkbox span {
+  position: absolute;
+  margin-left: -2rem;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid $white;
+  cursor: pointer;
+}
+
