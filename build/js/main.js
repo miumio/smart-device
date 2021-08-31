@@ -21,3 +21,32 @@
     })
   });
 })();
+
+(function () {
+
+  const popupLink = document.querySelector(".js-popup");
+  const modalPopup = document.querySelector(".modal");
+  const modalClose = document.querySelectorAll(".js-close");
+
+  popupLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalPopup.classList.add('modal--show')
+  })
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (modalPopup.classList.contains("modal--show")) {
+        evt.preventDefault();
+        modalPopup.classList.remove("modal--show");
+      }
+    }
+  });
+
+  modalClose.forEach(function (el) {
+
+    el.addEventListener('click', function () {
+      modalPopup.classList.contains('modal--show');
+      modalPopup.classList.remove('modal--show');
+    })
+  })
+})();

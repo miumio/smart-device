@@ -37,7 +37,7 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="header__btn btn">Заказать звонок</a>
+        <a href="#" class="header__btn btn js-popup">Заказать звонок</a>
       </div>
       <section class="header__intro intro">
         <div class="intro__text-wrapper">
@@ -61,7 +61,6 @@
         </div>
       </section>
     </div>
-    <section class="header__modal feedback"></section>
   </header>
   <main>
     <section class="advantages">
@@ -350,6 +349,42 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__form form">
+      <h2>Закажите звонок</h2>
+      <button class="modal__btn btn js-close" type="button" aria-label="Закрыть"></button>
+      <p>
+        Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+      </p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__field">
+          <label aria-label="Введите имя">
+            <input type="text" id="data-name" name="name" placeholder="Имя" required="">
+          </label>
+        </div>
+        <div class="form__field">
+          <label aria-label="Введите номер телефона">
+            <input type="tel" id="data-phone" name="phone" placeholder="Телефон" required="">
+          </label>
+        </div>
+        <div class="form__field">
+          <label aria-label="Текст">
+            <textarea name="text" id="data-text" cols="30" rows="10" placeholder="Ваш вопрос" required=""></textarea>
+          </label>
+        </div>
+        <button class="form__btn btn" type="submit">Отправить</button>
+        <div class="form__field form__field--checkbox">
+          <label>
+            <input type="checkbox" name="agreement" checked="">
+            <span></span>
+              Я согласен на обработку персональных данных
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="modal__bg js-close"></div>
+  </section>
+
   <script src="js/main.js"></script>
 </body>
 </html>
