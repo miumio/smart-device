@@ -16,7 +16,6 @@
 
   &--textarea {
     min-width: 450px;
-    resize: none;
   }
 
   &--checkbox {
@@ -31,6 +30,10 @@
       min-width: auto;
     }
   }
+}
+
+.form textarea {
+  resize: none;
 }
 
 .form textarea,
