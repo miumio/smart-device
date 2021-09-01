@@ -45,6 +45,10 @@
   @media (max-width: $tablet) {
     @include visually-hidden;
   }
+
+  @media (max-width: $mobile) {
+    max-width: none;
+  }
 }
 
 .copyright__inner > p {
@@ -63,8 +67,4 @@
     flex-direction: column;
     text-align: center;
   }
-
-  // & li:first-child {
-  //   margin-left: 70px;
-  // }
 }
