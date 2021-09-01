@@ -1,11 +1,14 @@
 .copyright {
   padding: 15px 0;
+  font-size: 0.81rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .copyright__wrapper {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1536px;
 }
 
 .copyright h3 {
@@ -32,7 +35,8 @@
 .copyright__inner {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  flex: 6 0 0;
+  min-width: 450px;
 
   @media (max-width: $tablet) {
     @include visually-hidden;
@@ -49,10 +53,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-grow: 1;
+  flex: 10 1 0;
 
   @media (max-width: $mobile) {
     flex-direction: column;
     text-align: center;
+  }
+
+  & li:first-child {
+    margin-left: 70px;
   }
 }

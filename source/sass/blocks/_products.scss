@@ -1,5 +1,5 @@
 .products {
-  padding: 93px 0 115px;
+  padding: 90px 0 129px;
   color: $white;
   background-color: $dark;
 }
@@ -19,19 +19,22 @@
 .products h2 {
   @include title;
 
-  margin-bottom: 47px;
+  margin-bottom: 49px;
 }
 
 .products h3 {
 
   position: absolute;
-  top: 50px;
+  top: 53px;
   left: 43px;
+  margin: 0;
   width: min-content;
   min-width: 152px;
 
   font-family: $roboto;
   font-weight: 400;
+  line-height: 1.87rem;
+
   color: $white;
   font-size: 1.25rem;
 }

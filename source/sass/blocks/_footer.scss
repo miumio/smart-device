@@ -1,19 +1,23 @@
 .footer {
   color: $dark;
+  font-size: 0.94rem;
+  line-height: 25px;
+
   background-color: $grey-light;
   overflow: hidden;
 }
 
 .footer__row {
   margin-bottom: -1px;
+  padding: 65px 0 58px;
+
   border-bottom: $grey-line;
 }
 
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 65px;
-  padding-bottom: 50px;
+  max-width: 1536px;
 
   @media (max-width: $tablet) {
     flex-wrap: wrap;
@@ -27,7 +31,7 @@
 
 
 .footer h3 {
-  margin: 0 0 23px;
+  margin: -5px 0 20px;
   font-family: $roboto;
   font-size: 15px;
   font-weight: 400;
@@ -48,9 +52,10 @@
 }
 
 .footer__nav {
-  padding: 2rem 3rem;
+  margin-left: -30px;
+  padding: 0 3rem;
   display: grid;
-  column-gap: 20px;
+  column-gap: 72px;
   grid-template-columns: repeat(2, auto);
 
   @media (max-width: $tablet) {
@@ -68,10 +73,12 @@
 }
 
 .footer__address {
-  padding: 2rem 3rem;
+  // padding: 2rem 3rem;
 }
 
 .footer__social {
+  padding-bottom: 9px;
+
   @media (max-width: $tablet) {
     width: 100%;
     margin: 0 calc(((100vw - 100%) / 2) * -1);

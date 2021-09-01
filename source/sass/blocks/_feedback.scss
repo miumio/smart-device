@@ -1,14 +1,16 @@
 .feedback {
-  padding: 96px 0 113px;
+  padding: 91px 0 111px;
   color: $white;
   background-color: $blue;
 
   background-image:
     url("../img/feedback-airplane@1x.png"),
-    url("../img/feedback-bg@1x.png");
+    url("../img/feedback-bg.svg");
   background-repeat: no-repeat;
-  background-size: 40% auto, 100% auto;
-  background-position: center left 10%;
+  background-size: 26.5% auto, 91% auto;
+  background-position:
+    top 160px left 25%,
+    top -62px right;
 
   @media (min-resolution: $retina) {
     background-image: url("../img/feedback-airplane@2x.png");
@@ -34,16 +36,17 @@
 .feedback h3 {
   @include title;
 
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 }
 
 .feedback p {
   margin: 0;
+  padding-left: 3px;
 }
 
 .feedback__form {
   margin-left: auto;
-  max-width: 50%;
+  max-width: 49%;
 
   @media (max-width: $tablet) {
     max-width: none;
