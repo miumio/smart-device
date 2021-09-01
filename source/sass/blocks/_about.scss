@@ -1,10 +1,18 @@
 .about {
   margin-bottom: 110px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 84px;
+  }
 }
 
 .about h2 {
   @include title;
   margin: 0 0 22px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 26px;
+  }
 }
 
 .about__wrapper {
@@ -14,6 +22,12 @@
 .about p {
   margin: 0 0 22px;
   line-height: 1.37rem;
+
+  @media (max-width: $tablet) {
+    max-height: 88px;
+    overflow: hidden;
+
+  }
 }
 
 .about__link {
@@ -35,6 +49,10 @@
   padding-left: 180px;
   padding-right: 5px;
 
+  @media (max-width: $tablet) {
+    padding-left: 186px;
+  }
+
   // &::after {
   //   content: "2005";
   //   position: absolute;
@@ -55,7 +73,7 @@
 .about__year {
   display: block;
   position: absolute;
-  top: 49%;
+  bottom: 40px;
   left: 0;
   font-family: $roboto;
   font-weight: 700;
@@ -71,6 +89,15 @@
 
   transform-origin: 9px 7px;
   transform: rotate(270deg) translateX(-50%);
+
+  @media (max-width: $tablet) {
+    // top: 47%;
+    left: 4px;
+    // font-size: 182px;
+    // background-size: 110%;
+    transform:  rotate(270deg) translateX(-50%) scale(114%);
+
+  }
 
   @media (max-width: $mobile) {
     display: none;

@@ -17,6 +17,8 @@
   }
 
   @media (max-width: $tablet) {
+    padding-top: 81px;
+    padding-bottom: 105px;
     background-image: none;
   }
 }
@@ -37,6 +39,11 @@
   @include title;
 
   margin-bottom: 11px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 18px;
+  }
+
 }
 
 .feedback p {
@@ -49,6 +56,7 @@
   max-width: 49%;
 
   @media (max-width: $tablet) {
-    max-width: none;
+    margin: 0 auto;
+    max-width: 82%;
   }
 }

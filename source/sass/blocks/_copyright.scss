@@ -3,6 +3,10 @@
   font-size: 0.81rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  @media (max-width: $tablet) {
+    padding: 1.27rem 0;
+  }
 }
 
 .copyright__wrapper {
@@ -60,7 +64,7 @@
     text-align: center;
   }
 
-  & li:first-child {
-    margin-left: 70px;
-  }
+  // & li:first-child {
+  //   margin-left: 70px;
+  // }
 }

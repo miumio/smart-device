@@ -2,6 +2,11 @@
   padding: 90px 0 129px;
   color: $white;
   background-color: $dark;
+
+  @media (max-width: $tablet) {
+    padding-top: 51px;
+    padding-bottom: 33px;
+  }
 }
 
 .products__list {
@@ -20,6 +25,10 @@
   @include title;
 
   margin-bottom: 49px;
+
+  @media (max-width: $tablet) {
+    width: 85%;
+  }
 }
 
 .products h3 {
@@ -37,19 +46,24 @@
 
   color: $white;
   font-size: 1.25rem;
+
+  @media (max-width: $tablet) {
+    top: 43px;
+    left: 47px;
+  }
 }
 
 .products__item {
   position: relative;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 44px;
+  }
 }
 
 .products__link {
   display: block;
   position: relative;
-
-  @media (max-width: $tablet) {
-    margin-bottom: 46px;
-  }
 }
 
 .products__img-wrapper {

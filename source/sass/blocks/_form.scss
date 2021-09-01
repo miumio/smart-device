@@ -4,6 +4,11 @@
   margin-top: 50px;
   margin-left: -30px;
 
+
+  @media (max-width: $tablet) {
+    margin-top: 55px;
+  }
+
   @media (max-width: $mobile) {
     display: block;
   }
@@ -32,6 +37,7 @@
   @media (max-width: $tablet) {
     &--textarea {
       flex: 0 1 960px;
+      margin-bottom: 45px;
       min-width: auto;
     }
   }
