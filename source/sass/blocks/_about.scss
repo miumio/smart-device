@@ -4,6 +4,10 @@
   @media (max-width: $tablet) {
     margin-bottom: 84px;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 64px;
+  }
 }
 
 .about h2 {
@@ -25,7 +29,12 @@
 
   @media (max-width: $tablet) {
     max-height: 88px;
-    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 44px;
+    max-height: 160px;
   }
 }
 
@@ -40,6 +49,10 @@
   &:hover {
     color: $white;
     background-color: $blue;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
   }
 }
 

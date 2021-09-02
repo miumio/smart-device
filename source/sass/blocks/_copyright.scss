@@ -5,7 +5,7 @@
   text-transform: uppercase;
 
   @media (max-width: $tablet) {
-    padding: 1.27rem 0;
+    padding-top: 30px;
   }
 }
 
@@ -43,12 +43,12 @@
   min-width: 450px;
 
   @media (max-width: $tablet) {
-    @include visually-hidden;
+    display: none;
   }
 
-  @media (max-width: $mobile) {
-    max-width: none;
-  }
+  // @media (max-width: $mobile) {
+  //   max-width: none;
+  // }
 }
 
 .copyright__inner > p {
@@ -66,5 +66,9 @@
   @media (max-width: $mobile) {
     flex-direction: column;
     text-align: center;
+
+    & li {
+      margin-bottom: 20px;
+    }
   }
 }

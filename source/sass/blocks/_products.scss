@@ -29,6 +29,12 @@
   @media (max-width: $tablet) {
     width: 85%;
   }
+
+  @media (max-width: $mobile) {
+    width: auto;
+    margin-left: 10px;
+    margin-bottom: 41px;
+  }
 }
 
 .products h3 {
@@ -51,6 +57,11 @@
     top: 43px;
     left: 47px;
   }
+
+  @media (max-width: $mobile) {
+    top: 22px;
+    left: 35px;
+  }
 }
 
 .products__item {
@@ -58,6 +69,10 @@
 
   @media (max-width: $tablet) {
     margin-bottom: 44px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 30px;
   }
 }
 

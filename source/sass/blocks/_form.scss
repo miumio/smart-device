@@ -11,6 +11,8 @@
 
   @media (max-width: $mobile) {
     display: block;
+    margin-top: 25px;
+    margin-left: 0;
   }
 }
 
@@ -39,6 +41,16 @@
       flex: 0 1 960px;
       margin-bottom: 45px;
       min-width: auto;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 29px;
+    margin-left: 0;
+
+    &--checkbox {
+      padding-top: 0;
+      padding-left: 2rem;
     }
   }
 }
@@ -72,6 +84,12 @@
 .form__btn {
   margin-left: 33px;
   flex: 1 1 230px;
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+    margin-bottom: 27px;
+    width: 100%;
+  }
 }
 
 .form__field--checkbox input {
@@ -95,4 +113,8 @@
   height: 1rem;
   border: 1px solid $white;
   cursor: pointer;
+
+  @media (max-width: $mobile) {
+    margin-top: 3px;
+  }
 }

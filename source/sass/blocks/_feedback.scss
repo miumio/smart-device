@@ -21,6 +21,15 @@
     padding-bottom: 105px;
     background-image: none;
   }
+
+  @media (max-width: $mobile) {
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+}
+
+.feedback textarea {
+  min-height: 158px;
 }
 
 .feedback__wrapper {
@@ -43,11 +52,20 @@
   @media (max-width: $tablet) {
     margin-bottom: 18px;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 12px;
+  }
 }
 
 .feedback p {
   margin: 0;
   padding-left: 3px;
+
+  @media (max-width: $mobile) {
+    margin-left: -3px;
+    line-height: 22px;
+  }
 }
 
 .feedback__form {
@@ -57,5 +75,9 @@
   @media (max-width: $tablet) {
     margin: 0 auto;
     max-width: 82%;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: none;
   }
 }

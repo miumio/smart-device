@@ -14,8 +14,11 @@
   }
 
   @media (max-width: $mobile) {
-    padding-right: 13px;
-    padding-bottom: 24px;
+    padding: 23px 15px 24px 23px;
+
+    &--suppliers {
+      padding-right: 10px;
+    }
   }
 
   &:hover {
@@ -59,7 +62,7 @@
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-size: 1.25rem;
   }
 }
@@ -70,5 +73,9 @@
 
   @media (max-width: $tablet) {
     line-height: 142%;
+  }
+
+  @media (max-width: $mobile) {
+    line-height: 22px;
   }
 }

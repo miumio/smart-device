@@ -6,4 +6,8 @@
   @media (max-width: $tablet) {
     padding-top: 55px;
   }
+
+  @media (max-width: $mobile) {
+    padding-top: 36px;
+  }
 }

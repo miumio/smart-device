@@ -1,21 +1,18 @@
 (function () {
-  const footer = document.querySelector('.footer');
-  const menuLink = footer.querySelectorAll('.footer__accordion-link');
-  const menuList = footer.querySelectorAll('.footer__list');
+  var d = document;
+  var footer = d.querySelector('.footer');
+  var ul = d.querySelector('.footer__according-list');
+  var h4s = d.querySelectorAll('h4');
 
-  menuList.forEach(function (item) {
-    item.classList.add('footer__list--hidden');
-  });
+  footer.classList.add('footer--js');
 
-  menuLink.forEach(function (item) {
-    item.classList.add('footer__accordion-link--active');
-  });
+  ul.addEventListener('click', function (e) {
+    for (var i = 0; i < h4s.length; i++) {
+      h4s[i].classList.remove('footer__accordion-link--active');
+    }
 
-  menuLink.forEach(function (el) {
-    el.addEventListener('click', function () {
-
-      el.classList.toggle('footer__accordion-link--active');
-      el.nextElementSibling.classList.toggle('footer__list--hidden');
-    });
+    if (e.target && e.target.nodeName == 'H4') {
+      e.target.classList.toggle('footer__accordion-link--active');
+    }
   });
 })();
