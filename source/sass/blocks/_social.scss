@@ -1,7 +1,6 @@
 .social {
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
 
   @media (max-width: $tablet) {
     flex-direction: row;

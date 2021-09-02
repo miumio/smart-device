@@ -5,6 +5,10 @@
   text-transform: uppercase;
 
   @media (max-width: $tablet) {
+    padding-top: 22px;
+  }
+
+  @media (max-width: $mobile) {
     padding-top: 30px;
   }
 }
@@ -45,10 +49,6 @@
   @media (max-width: $tablet) {
     display: none;
   }
-
-  // @media (max-width: $mobile) {
-  //   max-width: none;
-  // }
 }
 
 .copyright__inner > p {

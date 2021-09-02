@@ -1,13 +1,13 @@
 (function () {
-  var d = document;
-  var footer = d.querySelector('.footer');
-  var ul = d.querySelector('.footer__according-list');
-  var h4s = d.querySelectorAll('h4');
+  const d = document;
+  const footer = d.querySelector('.footer');
+  const ul = d.querySelector('.footer__according-list');
+  const h4s = d.querySelectorAll('h4');
 
   footer.classList.add('footer--js');
 
   ul.addEventListener('click', function (e) {
-    for (var i = 0; i < h4s.length; i++) {
+    for (let i = 0; i < h4s.length; i++) {
       h4s[i].classList.remove('footer__accordion-link--active');
     }
 

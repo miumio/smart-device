@@ -3,8 +3,12 @@
   color: $white;
 
   &--show {
-    display: block;
+    display: flex;
   }
+}
+
+.modal .btn {
+  margin-bottom: 30px;
 }
 
 .modal__form {
@@ -57,9 +61,6 @@
   }
 }
 
-.modal__form form {
-  display: block;
-}
 
 .modal__bg {
   position: fixed;

@@ -14,7 +14,7 @@
   border-bottom: $grey-line;
 
   @media (max-width: $tablet) {
-    padding: 18px 0;
+    padding: 18px 0 35px;
   }
 
   @media (max-width: $mobile) {
@@ -39,7 +39,6 @@
   }
 }
 
-
 .footer h4 {
   margin: -5px 0 20px;
   font-family: $roboto;
@@ -58,7 +57,6 @@
   opacity: 0.5;
 }
 
-
 .footer__logo {
   display: block;
   max-width: 216px;
@@ -76,7 +74,7 @@
 .footer__social {
   padding-bottom: 9px;
   text-transform: uppercase;
-  flex: 1 0 120px;
+  flex: 0 1 234px;
 
   @media (max-width: $tablet) {
     flex: 1 0 770px;
@@ -97,7 +95,7 @@
 
 .footer__list {
   @include list-style-reset;
-  flex: 0 1 250px;
+  // flex: 1 1 0;
 
   &:first-of-type {
     @media (max-width: $mobile) {
@@ -142,19 +140,18 @@
 
     &--active {
       &::before {
-        display: none
+        display: none;
       }
     }
-    }
-
+  }
 }
 
 .footer__according-list {
   @include list-style-reset;
+  max-width: 1023px;
 
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
+  flex: 1 1 0;
   justify-content: space-between;
 
   @media (max-width: $mobile) {
@@ -163,14 +160,28 @@
 }
 
 .footer__according-item {
+  flex: 0 1 auto;
+
   &--nav {
-    flex: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 484px;
     padding-right: 30px;
     padding-left: 30px;
+
+    & h4 {
+      width: 100%;
+    }
   }
 
   @media (max-width: $tablet) {
     padding: 40px 13px 0 0;
+
+    &--nav {
+      display: block;
+      max-width: none;
+    }
   }
 
   @media (max-width: $mobile) {
@@ -178,7 +189,6 @@
     padding: 24px 18px 24px 15px;
     overflow: hidden;
   }
-
 }
 
 .footer__inner {
@@ -191,7 +201,6 @@
 }
 
 .footer--js .footer__list {
-
   @media (max-width: $mobile) {
     display: none;
     height: 0;

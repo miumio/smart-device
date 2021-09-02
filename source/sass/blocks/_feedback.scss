@@ -30,6 +30,10 @@
 
 .feedback textarea {
   min-height: 158px;
+
+  @media (max-width: $mobile) {
+    min-height: auto;
+  }
 }
 
 .feedback__wrapper {
