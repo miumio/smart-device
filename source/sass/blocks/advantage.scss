@@ -25,18 +25,18 @@
     background-color: $blue;
     cursor: pointer;
   }
+}
 
-  & svg {
-    margin-bottom: 21px;
-    fill: $blue;
+.advantage svg {
+  margin-bottom: 21px;
+  fill: $blue;
 
-    @media (max-width: $tablet) {
-      margin-bottom: 7px;
-    }
+  @media (max-width: $tablet) {
+    margin-bottom: 7px;
+  }
 
-    @media (max-width: $mobile) {
-      margin-bottom: 10px;
-    }
+  @media (max-width: $mobile) {
+    margin-bottom: 10px;
   }
 }
 

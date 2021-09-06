@@ -26,6 +26,7 @@
 .modal h2 {
   @include title;
   display: inline-block;
+  vertical-align: middle;
 
   font-size: 1.75rem;
 }

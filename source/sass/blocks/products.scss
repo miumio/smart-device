@@ -38,7 +38,6 @@
 }
 
 .products h3 {
-
   position: absolute;
   top: 53px;
   left: 43px;
@@ -83,11 +82,11 @@
 
 .products__img-wrapper {
   background-color: $dark;
+}
 
-  & img {
-    opacity: 0.2;
-    object-fit: cover;
-  }
+.products__img-wrapper img {
+  opacity: 0.2;
+  object-fit: cover;
 }
 
 .products__btn {
@@ -100,10 +99,10 @@
   height: 63px;
   color: $blue;
   background-color: $blue;
+}
 
-  & svg {
-    fill: currentColor;
-  }
+.products__btn svg {
+  fill: currentColor;
 }
 
 .products__link:hover h3 {

@@ -8,11 +8,11 @@
 
   ul.addEventListener('click', function (e) {
     for (let i = 0; i < h4s.length; i++) {
-      h4s[i].classList.remove('footer__accordion-link--active');
+      h4s[i].classList.remove('footer__according-link--active');
     }
 
     if (e.target && e.target.nodeName == 'H4') {
-      e.target.classList.toggle('footer__accordion-link--active');
+      e.target.classList.toggle('footer__according-link--active');
     }
   });
 })();

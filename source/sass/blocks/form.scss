@@ -21,11 +21,6 @@
   margin-left: 30px;
   flex: 1 1 auto;
 
-  & label {
-    font-size: 0.87rem;
-    opacity: 0.8;
-  }
-
   &--textarea {
     min-width: 450px;
   }
@@ -54,6 +49,11 @@
       padding-left: 2rem;
     }
   }
+}
+
+.form__field label {
+  font-size: 0.87rem;
+  opacity: 0.8;
 }
 
 .form textarea {

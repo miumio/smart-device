@@ -29,12 +29,11 @@
   max-width: 1536px;
 
   @media (max-width: $tablet) {
-    flex-wrap: wrap;
+    display: block;
     padding: 0 24px;
   }
 
   @media (max-width: $mobile) {
-    display: block;
     padding: 0;
   }
 }
@@ -95,7 +94,6 @@
 
 .footer__list {
   @include list-style-reset;
-  // flex: 1 1 0;
 
   &:first-of-type {
     @media (max-width: $mobile) {
@@ -132,16 +130,10 @@
       height: 1px;
       background-color: $grey-footer;
       transform: translateY(-50%);
-
-      &::before {
-        transform: rotate(90deg) translateY(-50%);
-      }
     }
 
-    &--active {
-      &::before {
-        display: none;
-      }
+    &::before {
+      transform: rotate(90deg) translateY(-50%);
     }
   }
 }
@@ -170,18 +162,14 @@
     padding-right: 30px;
     padding-left: 30px;
 
-    & h4 {
-      width: 100%;
+    @media (max-width: $tablet) {
+      max-width: none;
+      flex-direction: column;
     }
   }
 
   @media (max-width: $tablet) {
     padding: 40px 13px 0 0;
-
-    &--nav {
-      display: block;
-      max-width: none;
-    }
   }
 
   @media (max-width: $mobile) {
@@ -190,6 +178,11 @@
     overflow: hidden;
   }
 }
+
+.footer__according-item h4 {
+  width: 100%;
+}
+
 
 .footer__inner {
   display: flex;
@@ -209,7 +202,12 @@
   }
 }
 
-.footer__accordion-link--active ~ .footer__list {
+.footer__according-link--active::before {
+  display: none;
+}
+
+
+.footer__according-link--active ~ .footer__list {
   display: block;
   height: auto;
   opacity: 1;
