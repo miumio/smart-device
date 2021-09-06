@@ -62,7 +62,7 @@
   padding-right: 5px;
 
   @media (max-width: $tablet) {
-    padding-left: 186px;
+    padding-left: 190px;
   }
 
   @media (max-width: $mobile) {
@@ -93,6 +93,7 @@
 
   @media (max-width: $tablet) {
     left: 4px;
+    bottom: 46px;
     transform: rotate(270deg) translateX(-50%) scale(114%);
   }
 

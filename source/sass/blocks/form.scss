@@ -32,6 +32,14 @@
     padding-left: 2.5rem;
   }
 
+  &--modal {
+    margin-bottom: 30px;
+  }
+
+  &--modal-textarea {
+    margin-bottom: 25px;
+  }
+
   @media (max-width: $tablet) {
     &--textarea {
       flex: 0 1 960px;
@@ -85,11 +93,19 @@
 .form__btn {
   margin-left: 33px;
   flex: 1 1 230px;
+  transition: all $easy;
 
   @media (max-width: $mobile) {
     margin-left: 0;
     margin-bottom: 27px;
     width: 100%;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: $white;
+    color: $blue;
   }
 }
 
