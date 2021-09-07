@@ -1290,7 +1290,8 @@ body {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.1);
-  border: 0; }
+  border: 0;
+  border-radius: 0; }
   .form textarea::-webkit-input-placeholder,
   .form input::-webkit-input-placeholder {
     font-family: "PT Mono", "Verdana", sans-serif;

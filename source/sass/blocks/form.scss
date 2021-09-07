@@ -76,6 +76,7 @@
   color: rgba($white, 0.7);
   background-color: rgba($white, 0.1);
   border: 0;
+  border-radius: 0;
 
   &::placeholder {
     font-family: $pt-mono;
