@@ -867,8 +867,7 @@ body {
       .advantage--suppliers {
         padding-right: 10px; } }
   .advantage:hover {
-    background-color: #00b2ff;
-    cursor: pointer; }
+    background-color: #00b2ff; }
 
 .advantage svg {
   margin-bottom: 21px;
