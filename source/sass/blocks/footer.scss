@@ -79,7 +79,7 @@
 .footer__social {
   padding-bottom: 9px;
   text-transform: uppercase;
-  flex: 0 1 234px;
+  flex: 0 1 240px;
 
   @media (max-width: $tablet) {
     flex: 1 0 770px;
@@ -150,7 +150,7 @@
 
 .footer__according-list {
   @include list-style-reset;
-  max-width: 1023px;
+  max-width: 993px;
 
   display: flex;
   flex: 1 1 0;
@@ -168,9 +168,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 484px;
-    padding-right: 30px;
-    padding-left: 30px;
+    max-width: 453px;
+    padding-right: 28px;
+    // padding-left: 20px;
 
     @media (max-width: $tablet) {
       max-width: none;

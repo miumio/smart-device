@@ -308,8 +308,8 @@ body {
   padding-bottom: 9px;
   text-transform: uppercase;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 234px;
-          flex: 0 1 234px; }
+      -ms-flex: 0 1 240px;
+          flex: 0 1 240px; }
   @media (max-width: 1023px) {
     .footer__social {
       -webkit-box-flex: 1;
@@ -367,7 +367,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 1023px;
+  max-width: 993px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,9 +394,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 484px;
-    padding-right: 30px;
-    padding-left: 30px; }
+    max-width: 453px;
+    padding-right: 28px; }
     @media (max-width: 1023px) {
       .footer__according-item--nav {
         max-width: none;
