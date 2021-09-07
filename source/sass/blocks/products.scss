@@ -71,13 +71,17 @@
   }
 
   @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 256px;
     margin-bottom: 30px;
+    overflow: hidden;
   }
 }
 
 .products__link {
   display: block;
-  position: relative;
 }
 
 .products__img-wrapper {
