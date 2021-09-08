@@ -18,6 +18,60 @@
 })();
 
 (function () {
+  const input = document.querySelectorAll('input[type="tel"]');
+
+  input.forEach(function (item) {
+    item.addEventListener('input', (e) => {
+      const value = item.value.replace(/\D+/g, '');
+      const numberLength = 11;
+
+      const prefixNumber = (str) => {
+        if (str === '7') {
+          return '7 (';
+        }
+        if (str === '8') {
+          return '8 (';
+        }
+        if (str === '9') {
+          return '7 (9';
+        }
+        return '7 (';
+      };
+
+      let result;
+      if (item.value.includes('+8') || item.value[0] === '8') {
+        result = '';
+      } else {
+        result = '+';
+      }
+
+      for (let i = 0; i < value.length && i < numberLength; i++) {
+        switch (i) {
+          case 0:
+            result += prefixNumber(value[i]);
+            continue;
+          case 4:
+            result += ') ';
+            break;
+          case 7:
+            result += '-';
+            break;
+          case 9:
+            result += '-';
+            break;
+          default:
+            break;
+        }
+        result += value[i];
+      }
+      item.value = result;
+    });
+
+  });
+
+})();
+
+(function () {
   const popupLink = document.querySelector('.js-popup');
   const modalPopup = document.querySelector('.modal');
   const modalClose = document.querySelectorAll('.js-close');
