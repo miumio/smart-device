@@ -77,7 +77,7 @@
   const popupLink = document.querySelector('.js-popup');
   const modalPopup = document.querySelector('.modal');
   const btnClose = document.querySelector('.modal__btn');
-  const modalClose = document.querySelectorAll('.js-close');
+  const modalClose = modalPopup.querySelectorAll('.js-close');
   const form = modalPopup.querySelector('form');
   const userName = modalPopup.querySelector('#data-name');
   const userPhone = modalPopup.querySelector('#data-phone');
@@ -85,29 +85,42 @@
   const checkbox = modalPopup.querySelector('input[type=checkbox]');
 
   let isStorageSupport = true;
-  let storageName = '';
-  let storagePhone = '';
-  let storage = '';
+
+  const storage = {
+    name: '',
+    phone: '',
+    text: '',
+  };
 
   try {
-    storage = localStorage.getItem('userText');
-    storageName = localStorage.getItem('userName');
-    storagePhone = localStorage.getItem('userPhone');
+    storage.text = localStorage.getItem('userText');
+    storage.name = localStorage.getItem('userName');
+    storage.phone = localStorage.getItem('userPhone');
   } catch (err) {
     isStorageSupport = false;
   }
 
-  if (storageName) {
-    userText.value = storage;
-    userName.value = storageName;
-    userPhone.value = storagePhone;
+  if (storage.name) {
+    userText.value = storage.text;
+    userName.value = storage.name;
+    userPhone.value = storage.phone;
   } else userName.focus();
+
+  function focusRestrict () {
+    document.addEventListener('focus', function( event ) {
+      if ( showPopup && !modalPopup.contains( event.target ) ) {
+        event.stopPropagation();
+        btnClose.focus();
+      }
+    }, true);
+  }
 
   const showPopup = function () {
     modalPopup.classList.add('modal--show');
     body.style.overflow = 'hidden';
-
-    btnClose.focus();
+    modalPopup.setAttribute('tabindex', '0');
+    userPhone.focus();
+    focusRestrict();
   }
 
   const closePopup = function () {
@@ -118,6 +131,7 @@
   popupLink.addEventListener('click', showPopup);
 
   form.addEventListener('submit', function (evt) {
+    evt.preventDefault();
     if (!userName.value || !userPhone.value || !userText) {
       evt.preventDefault();
       checkbox.setCustomValidity('Check it');
@@ -128,6 +142,7 @@
         localStorage.setItem('userText', userText.value);
       }
     }
+    closePopup();
   });
 
   window.addEventListener('keydown', function (evt) {
