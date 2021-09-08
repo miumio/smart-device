@@ -1392,9 +1392,7 @@ body {
   .modal--show {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    max-height: 100vh;
-    overflow-y: scroll; }
+    display: flex; }
 
 .modal .btn {
   margin-bottom: 30px; }
@@ -1409,7 +1407,9 @@ body {
   margin: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  z-index: 10000; }
+  z-index: 10000;
+  max-height: 100vh;
+  overflow-y: scroll; }
 
 .modal h2 {
   margin: 0;

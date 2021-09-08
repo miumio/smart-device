@@ -4,8 +4,6 @@
 
   &--show {
     display: flex;
-    max-height: 100vh;
-    overflow-y: scroll;
   }
 }
 
@@ -23,6 +21,8 @@
   margin: auto;
   transform: translateX(-50%) translateY(-50%);
   z-index: 10000;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .modal h2 {
