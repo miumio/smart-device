@@ -1392,7 +1392,9 @@ body {
   .modal--show {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    max-height: 100vh;
+    overflow-y: scroll; }
 
 .modal .btn {
   margin-bottom: 30px; }
