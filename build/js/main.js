@@ -109,7 +109,7 @@
   popupLink.addEventListener('click', showPopup);
 
   form.addEventListener('submit', function (evt) {
-    if (!userName.value || !userPhone.value || !userText || !checkbox.checked) {
+    if (!userName.value || !userPhone.value || !userText) {
       evt.preventDefault();
       checkbox.setCustomValidity('Check it');
     } else {
