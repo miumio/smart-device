@@ -86,13 +86,12 @@
     margin: 0 calc(((100vw - 100%) / 2) * -1);
     font-size: 0.82rem;
     letter-spacing: 0.04em;
-
     border-bottom: $grey-line;
   }
 
   @media (max-width: $mobile) {
     padding-top: 46px;
-    padding-bottom: 55px;
+    padding-bottom: 45px;
     min-height: 261px;
   }
 }

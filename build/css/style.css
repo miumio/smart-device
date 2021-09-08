@@ -322,7 +322,7 @@ body {
   @media (max-width: 767px) {
     .footer__social {
       padding-top: 46px;
-      padding-bottom: 55px;
+      padding-bottom: 45px;
       min-height: 261px; } }
 
 .footer__list {
@@ -1224,7 +1224,8 @@ body {
   @media (max-width: 1023px) {
     .feedback__form {
       margin: 0 auto;
-      max-width: 82%; } }
+      max-width: 82%;
+      min-width: auto; } }
   @media (max-width: 767px) {
     .feedback__form {
       max-width: none; } }
