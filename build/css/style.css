@@ -1141,13 +1141,10 @@ body {
   padding: 91px 0 111px;
   color: #ffffff;
   background-color: #00b2ff;
-  background-image: url("../img/feedback-airplane@1x.png"), url("../img/feedback-bg.svg");
+  background-image: url("../img/feedback-bg.svg");
   background-repeat: no-repeat;
-  background-size: 26.5% auto, 91% auto;
-  background-position: top 160px left 25%, top -62px right; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-    .feedback {
-      background-image: url("../img/feedback-airplane@2x.png"); } }
+  background-size: 1824px;
+  background-position: center; }
   @media (max-width: 1023px) {
     .feedback {
       padding-top: 81px;
@@ -1217,7 +1214,8 @@ body {
 
 .feedback__form {
   margin-left: auto;
-  max-width: 49%; }
+  max-width: 49%;
+  min-width: 545px; }
   @media (max-width: 1023px) {
     .feedback__form {
       margin: 0 auto;
@@ -1225,6 +1223,18 @@ body {
   @media (max-width: 767px) {
     .feedback__form {
       max-width: none; } }
+
+.feedback__img-wrapper {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -35px;
+  margin-left: -30px;
+  padding-right: 5%; }
+  @media (max-width: 1023px) {
+    .feedback__img-wrapper {
+      display: none; } }
 
 .form form {
   display: -webkit-box;
