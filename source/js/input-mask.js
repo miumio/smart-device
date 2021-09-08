@@ -2,7 +2,7 @@
   const input = document.querySelectorAll('input[type="tel"]');
 
   input.forEach(function (item) {
-    item.addEventListener('input', (e) => {
+    item.addEventListener('input', () => {
       const value = item.value.replace(/\D+/g, '');
       const numberLength = 11;
 
